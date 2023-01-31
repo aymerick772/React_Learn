@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 const Car = (props) => {
+
     const colorInfo = props.color ? <p>Couleur : {props.color}</p> : (<p>Couleur : undefined</p>)
     let childInfo = '';
     if(props.children){
@@ -9,6 +10,7 @@ const Car = (props) => {
             <div className="cars">
                 {childInfo}
                 {colorInfo}
+                <p>Age : {props.year} ans</p>
             </div>
         )
     }else{

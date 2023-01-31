@@ -3,7 +3,7 @@ import './App.css';
 import React, {Component} from 'react'
 import Mycars from './components/Mycars';
 
-class App extends React.Component {
+class App extends Component {
 
   state = {
     titre : 'Mon catalogue voiture'
@@ -24,6 +24,12 @@ class App extends React.Component {
     })
   }
 
+  changeViaInput = (e) =>{
+    this.setState({
+      titre: e.target.value
+    })
+  }
+
   render(){
     return (
       <div className="App">
@@ -31,7 +37,7 @@ class App extends React.Component {
         <button onClick={this.changeTitle}> changer le nom en dure</button>
         <button onClick={() => this.changeViaParam("title via le param")}> changer le nom dynamique</button>
         <button onClick={this.changeViaBind.bind(this, "nouveau titre via bind")}> changer le nom via bind</button>
-        {/* <input type="text" onChange={this.changeViaBind.bind(this, "value")}/> */}
+        <input type="text" onChange={this.changeViaInput} value={this.state.titre}/>
       </div>
     );  
   }
