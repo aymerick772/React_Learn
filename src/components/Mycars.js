@@ -40,10 +40,16 @@ render(){
             <h1 onMouseOver={this.addStyleH1} >{this.props.title}</h1>
             <button onClick={this.addTenYears}>+ 10 ans</button>
             <p onCopy={this.noCopy}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, veritatis.</p>
-            <Car color={this.state.voitures[0].color} year ={year - this.state.voitures[0].year}>{this.state.voitures[0].name}</Car>
+            {/* <Car color={this.state.voitures[0].color} year ={year - this.state.voitures[0].year}>{this.state.voitures[0].name}</Car>
             <Car color={this.state.voitures[1].color} year ={year - this.state.voitures[1].year}>{this.state.voitures[1].name}</Car>
-            <Car color={this.state.voitures[2].color} year ={year - this.state.voitures[2].year}>{this.state.voitures[2].name}</Car>
-      
+            <Car color={this.state.voitures[2].color} year ={year - this.state.voitures[2].year}>{this.state.voitures[2].name}</Car> */}
+            {
+                this.state.voitures.map((voiture) =>{
+                    return (
+                        <Car color={voiture.color} year={voiture.year} >{voiture.name}</Car>
+                    )
+                })
+            }
         </div>
     )
 }
