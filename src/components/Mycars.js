@@ -44,9 +44,9 @@ render(){
             <Car color={this.state.voitures[1].color} year ={year - this.state.voitures[1].year}>{this.state.voitures[1].name}</Car>
             <Car color={this.state.voitures[2].color} year ={year - this.state.voitures[2].year}>{this.state.voitures[2].name}</Car> */}
             {
-                this.state.voitures.map((voiture) =>{
+                this.state.voitures.map((voiture, index) =>{
                     return (
-                        <Car color={voiture.color} year={voiture.year} >{voiture.name}</Car>
+                        <Car key={index} color={voiture.color} year={year -voiture.year} >{voiture.name}</Car>
                     )
                 })
             }
