@@ -9,8 +9,8 @@ const Car = (props) => {
         return (
             <tr className="cars">
                 <td>{childInfo}</td>
-                <td>{colorInfo}</td>
                 <td><p>Age : {props.year} ans</p></td>
+                <td>{colorInfo}</td>
             </tr>
         )
     }else{
