@@ -13,5 +13,5 @@ class Mom extends Component {
         )
     }
 }
-//test push contribution 
+//test push contribution .
 export default Mom;
