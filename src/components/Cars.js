@@ -2,10 +2,10 @@ import React, {Fragment} from "react";
 
 const Car = (props) => {
 
-    const colorInfo = props.color ? <p>Couleur : {props.color}</p> : (<p>Couleur : undefined</p>)
+    const colorInfo = props.color ? `Couleur : ${props.color}` : (`Couleur : undefined`)
     let childInfo = '';
     if(props.children){
-        childInfo = <p>Marque : {props.children}</p>;
+        childInfo = `Marque : ${props.children}`;
         return (
             <tr className="cars">
                 <td>{childInfo}</td>
