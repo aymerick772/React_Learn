@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Fragment} from "react";
 
 const Car = (props) => {
 
@@ -7,11 +7,11 @@ const Car = (props) => {
     if(props.children){
         childInfo = <p>Marque : {props.children}</p>;
         return (
-            <div className="cars">
-                {childInfo}
-                {colorInfo}
-                <p>Age : {props.year} ans</p>
-            </div>
+            <tr className="cars">
+                <td>{childInfo}</td>
+                <td>{colorInfo}</td>
+                <td><p>Age : {props.year} ans</p></td>
+            </tr>
         )
     }else{
         childInfo = <p>Pas de données</p>;
