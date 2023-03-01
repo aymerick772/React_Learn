@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -27,7 +27,7 @@
 .App-link {
   color: #61dafb;
 }
-
+/* 
 .cars{
   background-color:pink;
   width:400px;
@@ -60,7 +60,7 @@ h1.styled{
   padding-bottom: 12px;
   background-color: rgb(24,99,160);
   color : white;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
