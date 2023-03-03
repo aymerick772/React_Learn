@@ -6,6 +6,7 @@ class ClassCount extends Component {
         super(props);
         this.state = {
             count: 0,
+            name : "", 
         }
     }
 
@@ -19,7 +20,10 @@ class ClassCount extends Component {
         })
     }
     componentDidUpdate(prevProps, prevState){
-        document.title = `Count ${this.state.count}`
+        //pour ne pas enclencher inutilement 
+        if(this.state.count !== prevState.count){
+            document.title = `Count ${this.state.count}`
+        }
 
     }
 
