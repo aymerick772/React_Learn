@@ -10,8 +10,10 @@ useEffect(() =>{
     setTimeout(()=>{
         document.title = `count : ${count}`
     }, 2000)
-    //le [count] sert ne pas executer la fonction useEffect si le count reste le même
-}, [count])
+    //le [count] sert ne pas executer la fonction useEffect si le count reste le même, Effet ComponentDidUpdat
+    // }, [count])
+// Sert a reproduire l'effet de componentDidMount, par contre j'ai pas d'autre solution que d'ajouter plusieur useEffect() pour que chaque composant a son propre Effet
+}, [])
 
 
 
