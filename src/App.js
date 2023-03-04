@@ -6,6 +6,7 @@ import FuncCount from './components2/FuncCount';
 import Container from './components3/Container';
 import Profile from './components4/Profile';
 import Count from './components5/Count';
+import ObjCount from './components5/ObjCount';
 import {UserContext, ColorContext} from './components4/MyContext';
 
 class App extends Component {
@@ -33,7 +34,8 @@ state = {
           <Profile />
        </ColorContext.Provider>
       </UserContext.Provider> Component 4 */}
-        <Count/>
+        {/* <Count/>  Component 5*/}
+        <ObjCount/>  {/* Component 5*/}
       </div>
     );  
   }
