@@ -1,7 +1,8 @@
 import React from "react";
 
 
-const Count =({count , bgColor}) => {
+const Count =({text, count , bgColor}) => {
+    console.log(`pourcentage premier conteur ${text}`)
 
     const progress = {
         width : `${count}%`
@@ -18,5 +19,5 @@ const Count =({count , bgColor}) => {
         </>
     )
 }
-
-export default  Count;
+//Appliquer la méthode memo pour l'optimisation
+export default  React.memo(Count);
