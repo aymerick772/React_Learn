@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+  //Strict mode lance 2 fois les functions ;)
   <React.StrictMode>
     <App />
   </React.StrictMode>

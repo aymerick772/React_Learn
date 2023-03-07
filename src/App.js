@@ -4,7 +4,9 @@ import React, {Component} from 'react'
 
 
 // import App1UseCallBack from './components/App1UseCallBack'
-import App2UseMemo from './components2/App2UseMemo'
+// import App2UseMemo from './components2/App2UseMemo'
+
+import App3UseRef from './components3/App3UseRef';
 
 class App extends Component {
 
@@ -13,7 +15,9 @@ class App extends Component {
 
       <div className="">
           {/* <App1UseCallBack/> */}
-          <App2UseMemo/>
+          {/* <App2UseMemo/> */}
+
+          <App3UseRef/>
       </div>
     );  
   }
