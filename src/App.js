@@ -7,7 +7,8 @@ import React, {Component} from 'react'
 // import App2UseMemo from './components2/App2UseMemo'
 
 // import App3UseRef from './components3/App3UseRef';
-import App4useImperative from './components4/App4useImperative';
+// import App4useImperative from './components4/App4useImperative';
+import App5useLayoutEffect from './components5/App5useLayoutEffect';
 
 class App extends Component {
 
@@ -19,7 +20,8 @@ class App extends Component {
           {/* <App2UseMemo/> */}
 
           {/* <App3UseRef/> */}
-          <App4useImperative/>
+          {/* <App4useImperative/> */}
+          <App5useLayoutEffect/>
       </div>
     );  
   }
